@@ -1,0 +1,3 @@
+
+jsp提交product的name到action 
+然后action又跳转回showProduct.jsp把提交上来的name显示出来
