@@ -1,0 +1,11 @@
+struts中的Session有两个 
+	一个是传统的servlet包下的HttpSession 
+	另一个是Struts中自己定义的Session 
+
+传统的servlet包下的session的获取办法是： 
+	ServletActionContext.getRequest().getSession(); 
+	使用该方法，需要在eclipse的项目中导入servlet-api.jar，可以在右边下载 
+
+新的Session的获取办法是 
+	Map m = ActionContext.getContext().getSession(); 
+	这个session以Map类的形式出现，其中的值和HttpSession中的值是同步的 
