@@ -1,0 +1,2 @@
+# MyStruts
+MyStruts
