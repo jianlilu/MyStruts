@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+ 
+<struts>
+    <constant name="struts.i18n.encoding" value="UTF-8"></constant>
+ 
+    <package name="basicstruts" extends="struts-default">
+        <interceptors>
+            <interceptor name="dateInterceptor" class="com.lu.interceptor.DateInterceptor" />
+        </interceptors>
+ 
+        <action name="*Product*" class="com.lu.action.ProductAction" method="{1}">
+            <interceptor-ref name="dateInterceptor" />
+            <interceptor-ref name="defaultStack" />   
+            <result name="show">show.jsp</result>
+            <result name="list">list.jsp</result>
+        </action>
+ 
+    </package>
+ 
+</struts>

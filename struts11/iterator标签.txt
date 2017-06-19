@@ -1,0 +1,2 @@
+
+与JSTL标准标签库的c:forEach类似的，struts也提供了一个s:iterator用于遍历一个集合中的数据

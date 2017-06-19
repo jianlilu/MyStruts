@@ -1,0 +1,9 @@
+
+学习到目前为止，add，show, list分别需要进行配置 
+通过通配符匹配可以把这3个配置整合在一个配置中实现
+
+*Product 表示所有以Product结尾的路径，都会匹配在这个Action上 
+method={1}表示第一个通配符 
+如果访问的是addProduct就会调用add方法 
+如果访问的是listProduct就会调用list方法 
+以此类推

@@ -1,0 +1,4 @@
+
+拦截器可以简单地看成是Struts中的"filter" 
+拦截器可以拦截指定的Action，并且对Action进行相应的操作 
+在本例里，拦截了ProductAction，并且注入了当前时间

@@ -1,0 +1,4 @@
+
+下载右上角的struts2-config-browser-plugin-2.2.3.1.jar，并复制到WEB-INF/lib目录下
+访问如下路径，可以看到当前struts配置了哪些Action可以使用：
+	http://localhost:8080/struts16/config-browser/actionNames
